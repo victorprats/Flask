@@ -1,4 +1,5 @@
 # Flask
 
-* http://flask.pocoo.org
-* http://flask.pocoo.org/docs/1.0/
+* Flask ho!e page: http://flask.pocoo.org
+* Flask documentation: http://flask.pocoo.org/docs/1.0/
+* HTTP status codes: https://en.m.wikipedia.org/wiki/List_of_HTTP_status_codes
