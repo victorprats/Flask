@@ -3,18 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <title>Menu proncipal</title>
+    <link rel="stylesheet" type="text/css" href="layout.css">
 </head>
 <body>
-    <h1>Llista de tasques pendents</h1>
-    <div>Afegeix una tasca nova: <input type="text"><input type="submit"></div>
-    <div>
-        <ul>
-            <li style="font-size: 20pt"><input type="checkbox">Text1</li>
-            <li style="font-size: 20pt"><input type="checkbox">Text2</li>
-            <li style="font-size: 20pt"><input type="checkbox">Text3</li>
-            <li style="font-size: 20pt"><input type="checkbox">Text4</li>
-        </ul>
-    </div>
+    <h1>Introducció de dades</h1>
+	<form>
+		<div style="background-color:lightblue">
+        <div>
+		<label for="nom">Num i cognoms:</label>
+            <input type="text" placeholder="Escriu el teu num i cognoms:" name="nom" id="nom">
+            <br>
+
+        <label for="emailaddress">email:</label>
+            <input type="email" name="emailaddress" id="emailaddress">
+            <br>
+
+        <label for="usrtel">Número de telf.:</label>
+            <input type="tel" name="usrtel" id="usrtel">
+            <br>
+        <label for="sexe">Sexe:</label>
+            <input type="radio" name="sexe" id="sexe"> Honme
+            <input type="radio" name="sexe" id="sexe"> Dona
+
+        </div>
+        <div>
+         <label for="opcio">Selecciona una opció:</label>
+            <select name="" id="">
+                <option value="opcio_1" name="opcio" id="opcio">Opció 1</option>
+				<option value="opcio_2" name="opcio" id="opcio">Opció 2</option>
+				<option value="opcio_3" name="opcio" id="opcio">Opció 3</option>
+				<option value="opcio_4" name="opcio" id="opcio">Opció 4</option>
+				<option value="opcio_5" name="opcio" id="opcio">Opció 5</option>
+            </select>
+		</div>
+        <div>
+            <label for="text">Selecciona un text:</label>
+			<ul>
+				<ul style="font-size: 10pt"><input type="checkbox">Text1</ul>
+				<ul style="font-size: 15pt"><input type="checkbox">Text2</ul>
+				<ul style="font-size: 20pt"><input type="checkbox">Text3</ul>
+				<ul style="font-size: 25pt"><input type="checkbox">Text4</ul>
+			</ul>
+            <label for="databorn">Data de neixement:</label>
+            <input type="date" name="datanborn" id="databorn">
+
+
+		 <div>
+			<input type="submit" value="Enviar les dades">
+		 </div>
+
+     </form> 
 
 </body>
 </html>
