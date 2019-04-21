@@ -1,4 +1,4 @@
-.hero-image {
+.bodyimage {
   background-image: url("ppt.jpg"); /* The image used */
   background-color: #cccccc; /* Used if the image is unavailable */
   height: 500px; /* You must set a specified height */
