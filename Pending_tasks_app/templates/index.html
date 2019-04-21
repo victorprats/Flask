@@ -8,10 +8,10 @@
 <body>
     <h1>Introducció de dades</h1>
 	<form>
-		<div style="background-color:lightblue">
+		<!= div style="background-color:lightblue">
         <div>
-		<label for="nom">Num i cognoms:</label>
-            <input type="text" placeholder="Escriu el teu num i cognoms:" name="nom" id="nom">
+		<label for="nom">Nom i cognoms:</label>
+            <input type="text" placeholder="Escriu el teu nom i cognoms:" name="nom" id="nom">
             <br>
 
         <label for="emailaddress">email:</label>
@@ -21,8 +21,8 @@
         <label for="usrtel">Número de telf.:</label>
             <input type="tel" name="usrtel" id="usrtel">
             <br>
-        <label for="sexe">Sexe:</label>
-            <input type="radio" name="sexe" id="sexe"> Honme
+        <label for="sexe">Home/Dona:</label>
+            <input type="radio" name="sexe" id="sexe"> Home
             <input type="radio" name="sexe" id="sexe"> Dona
 
         </div>
@@ -30,6 +30,7 @@
          <label for="opcio">Selecciona una opció:</label>
             <select name="" id="">
                 <option value="opcio_1" name="opcio" id="opcio">Opció 1</option>
+		
 				<option value="opcio_2" name="opcio" id="opcio">Opció 2</option>
 				<option value="opcio_3" name="opcio" id="opcio">Opció 3</option>
 				<option value="opcio_4" name="opcio" id="opcio">Opció 4</option>
@@ -44,7 +45,7 @@
 				<ul style="font-size: 20pt"><input type="checkbox">Text3</ul>
 				<ul style="font-size: 25pt"><input type="checkbox">Text4</ul>
 			</ul>
-            <label for="databorn">Data de neixement:</label>
+            <label for="databorn">Data de naixement:</label>
             <input type="date" name="datanborn" id="databorn">
 
 
