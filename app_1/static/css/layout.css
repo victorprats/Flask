@@ -10,3 +10,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.submit {     /* center submit button */
+    text-align: center;
+}
