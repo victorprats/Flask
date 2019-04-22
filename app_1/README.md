@@ -10,5 +10,5 @@ Flask directory tree:
         
 * app_1: contains app.py
 * static/css: contains css files.
-* static/inages: contains images.
+* static/images: contains images.
 * templates: contains html files.
