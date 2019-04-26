@@ -2,61 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Menú principal</title>
+    <title>Introducció de dades</title>
     <link rel="stylesheet" type="text/css" href="../static/css/layout.css">
 </head>
 <body>
-    <h1>Introducció de dades</h1>
-	<form>
-	<div>
-	    <label for="nom">· Nom i cognoms:</label>
-            <input type="text" placeholder="Escriu el teu nom i cognoms:" name="nom" id="nom">
-            <br><br>
+    <div class="container">
+        <h1>Introducció de dades</h1>
+        <div class="formulari">
+            <form class="form1">
+                <label for="nom">· Nom i cognoms:</label>
+                <input type="text" placeholder="Escriu el teu nom i cognoms:" name="nom" id="nom">
+                <br>
 
-        <label for="emailaddress">· email:</label>
-            <input type="email" name="emailaddress" id="emailaddress">
-            <br><br>
+                <label for="emailaddress">· email:</label>
+                <input type="email" name="emailaddress" id="emailaddress">
+                <br>
 
-        <label for="usrtel">· Número de telf.:</label>
-            <input type="tel" name="usrtel" id="usrtel">
-            <br><br>
-		
-        <label for="sexe">· Home/Dona:</label>
-            <input type="radio" name="sexe" id="sexe"> Home
-            <input type="radio" name="sexe" id="sexe"> Dona
-            <br><br>
+                <label for="usrtel">· Número de telf.:</label>
+                <input type="tel" name="usrtel" id="usrtel">
+                <br>
+
+
+                <label>· Home/Dona:</label>
+                <input type="radio" name="sexe" id="home" value="home"> Home
+                <input type="radio" name="sexe" id="dona" > Dona
+                <br>
+
+                <label for="opcio">· Selecciona una opció:</label>
+                <select name="" id="">
+                    <option value="opcio_1" name="opcio" id="opcio">Opció 1</option>
+                    <option value="opcio_2" name="opcio" id="opcio">Opció 2</option>
+                    <option value="opcio_3" name="opcio" id="opcio">Opció 3</option>
+                    <option value="opcio_4" name="opcio" id="opcio">Opció 4</option>
+                    <option value="opcio_5" name="opcio" id="opcio">Opció 5</option>
+                </select>
+                <br>
+
+                <label for="text">· Selecciona un text:</label>
+                <ul style="font-size: 10pt">
+                    <input type="checkbox" id="text">Text1</ul>
+                <ul style="font-size: 15pt">
+                    <input type="checkbox" id="text">Text2</ul>
+                <ul style="font-size: 20pt">
+                    <input type="checkbox" id="text">Text3</ul>
+                <ul style="font-size: 25pt">
+                    <input type="checkbox" id="text">Text4</ul>
+                <br>
+
+                <label for="data">· Data de naixement:</label>
+                <input type="date" name="data" id="data">
+            </form>
         </div>
 
-        <div>
-         <label for="opcio">· Selecciona una opció:</label>
-            <select name="" id="">
-                <option value="opcio_1" name="opcio" id="opcio">Opció 1</option>
-		<option value="opcio_2" name="opcio" id="opcio">Opció 2</option>
-		<option value="opcio_3" name="opcio" id="opcio">Opció 3</option>
-		<option value="opcio_4" name="opcio" id="opcio">Opció 4</option>
-		<option value="opcio_5" name="opcio" id="opcio">Opció 5</option>
-            </select>
-            <br><br>
-	</div>
-        
-	<div>
-            <label for="text">· Selecciona un text:</label>
-		<ul>
-			<ul style="font-size: 10pt"><input type="checkbox" id="text">Text1</ul>
-			<ul style="font-size: 15pt"><input type="checkbox" id="text">Text2</ul>
-			<ul style="font-size: 20pt"><input type="checkbox" id="text">Text3</ul>
-			<ul style="font-size: 25pt"><input type="checkbox" id="text">Text4</ul>
-		</ul>
-            <br>
-            <label for="databorn">· Data de naixement:</label>
-            <input type="date" name="datanborn" id="databorn">
-        </div>
-
-        <div class="submit">
-            <br>
-		<input type="submit" value="Enviar les dades">
-	</div>
-		<h2>The date and time on the server is: {{ time }}</h2>
-     </form>
+                <div class="submit">
+                    <br>
+                    <input class="button" type="submit" value="Enviar les dades" name="" id="submit" style="width: 150px; height: 40px;">
+                    <input class="button" type="reset" value="Esborra formulari" name="formulari" id="esborrar" style="width: 150px; height: 40px;">
+                    <input class="button" type="submit" value="Menu principal" name="" id="menu" style="width: 150px; height: 40px;">
+                </div>
+    </div>
 </body>
 </html>
