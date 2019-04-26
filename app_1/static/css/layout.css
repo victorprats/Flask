@@ -3,14 +3,54 @@ body {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:16px;
+  line-height:1.6em;
+  text-align: left;
+  /* margin:10; */
 }
 
+
+/* -------- Aligning Items in a Flex Container -------- */
+/* https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container */
+
 body {
-  display: flex;   /* https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Aligning_Items_in_a_Flex_Container */
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.submit {     /* center submit button */
+/* ----- CSS :hover Selector -------- */
+/* https://www.w3schools.com/cssref/sel_hover.asp */
+a:hover{
+	color:green;
+}
+
+a:active{
+	color:green;
+}
+
+a:visited{
+
+}
+
+.button:hover{
+	background:green;
+	color:#fff;
+}
+
+.button{
+	background-color:#333;
+	color:#fff;
+	padding:10px 15px;
+	border:none;
+}
+
+
+
+
+/* center submit button */
+.submit {
     text-align: center;
 }
+
